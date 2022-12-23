@@ -20,7 +20,7 @@ copyMenu();
 
 // Showing the mobile menu 
 const menuButton = document.querySelector('.trigger'), 
-      closeButton = document.querySelector('t-close'),
+      closeButton = document.querySelector('.t-close'),
       addClass = document.querySelector('.site');
 menuButton.addEventListener('click', function(){
     addClass.classList.toggle('showmenu')
@@ -52,3 +52,5 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
     },
   });
+
+// show dpt menu

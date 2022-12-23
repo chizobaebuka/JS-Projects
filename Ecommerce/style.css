@@ -82,6 +82,8 @@ h4{
     font-weight: var(--fw6);
 }
 
+/* General Selectors */
+
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -89,7 +91,7 @@ h4{
 }
 .column{
     margin-left: -0.938em;
-    margin-right: -00.938em;
+    margin-right: -0.938em;
 }
 .column .row{
     padding: 0 0.938em;
@@ -209,7 +211,7 @@ h4{
 
 .header-top .wrapper{
     font-size: var(--font-small);
-    font-weight: var(--fw1);
+    font-weight: var(--fw3);
     justify-content: space-between;
     line-height: 42px;
 }
@@ -260,7 +262,7 @@ h4{
     font-family: 'Poppins';
     font-size: 1.75em;
     position: relative;
-    font-weight: var(--full) ;
+    font-weight: var(--fw8) ;
     padding-left: 0.75em;
     margin-right: 2em;
     display: flex;
@@ -269,17 +271,17 @@ h4{
     position: absolute;
     top: -15em;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     border-radius: var(--percent50);
     background-color: var(--light-bg-color);
-    z-index: 1;
+    z-index: -1;
 }
 .circle::before{
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 28x;
+    height: 28px;
     border-radius: var(--percent50);
     background-color: var(--secondary-color);
     bottom: 5px;
@@ -296,12 +298,12 @@ h4{
     font-weight: var(--font-smaller);
     padding: 3px;
     text-align: center;
-    line-height: 3px;
+    line-height: 10px;
     color: var(--white-color);
 }
 nav .fly-item{
     top: 50%;
-    margin-top: 24px;
+    margin-top: -24px;
     width: 30px;
     border-radius: 3px;
     right: -32px;
@@ -316,16 +318,17 @@ nav .fly-item{
 }
 .header-nav .right .fly-item{
     top:0;
-    right: 16x;
+    right: 16px;
     width: 16px;
-    background-color: var(--secondary-dark-colorcolor);
+    background-color: var(--secondary-dark-color);
     border-radius: var(--percent50);
 }
 .mega .flexcol{
     flex: 1;
-    min-width: 100px;
+    min-width: 180px;
     padding-right: 2.5em;
     padding-bottom: 1.5em;
+    z-index: 1;
 }
 
 /* HEADER MAIN/DEPARTMENTS CATEGORY */
@@ -582,6 +585,7 @@ form.search button:hover{
 
 
 
+
 @media screen and (min-width: 992px){
     .container{
         padding: 0 2em;
@@ -615,7 +619,7 @@ form.search button:hover{
         padding: 2.5em;
         line-height: 2em;
         background-color: var(--light-bg-color);
-        box-shadow: rgba(0, 0, 0, 20%) 0 30px 20px -30px;
+        box-shadow: rgba(0 0 0 / 20%) 0 30px 20px -30px;
         z-index: 100;
 
         display: none;
@@ -663,7 +667,7 @@ form.search button:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.3em;
+        gap: 0.5em;
         margin-top: 0.5em;
         position: absolute;
         bottom: 4em;
@@ -685,7 +689,7 @@ form.search button:hover{
         top: var(--percent100);
         width: 300px;
         background-color: var(-white-color);
-        border: 1.5px solid var(--border-color);
+        border: 1px solid var(--border-color);
         border-top: 0;
         border-bottom: 0;
     }
@@ -741,6 +745,7 @@ form.search button:hover{
     .dpt-menu .mega{
         width: auto;
         min-width: var(--percent100);
+        display: none;
     }
     .dpt-menu .has-child:hover .mega{
         display: flex;
