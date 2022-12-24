@@ -33,7 +33,7 @@ closeButton.addEventListener('click', function(){
 
 
 // Showing sub menu on mobile
-const subMenu = document.querySelector('.has-child .icon-small');
+const subMenu = document.querySelectorAll('.has-child .icon-small');
 subMenu.forEach((menu) => menu.addEventListener('click', toggle));
 
 function toggle(e) {
@@ -45,8 +45,7 @@ function toggle(e) {
 
 // swiper
 const swiper = new Swiper('.swiper', {
-    loop: true,
-  
+    loop: true, 
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
