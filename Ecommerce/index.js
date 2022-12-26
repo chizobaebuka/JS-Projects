@@ -52,4 +52,19 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
-// show dpt menu
+// show search
+const searchButton = document.querySelector('.t-search'),
+tClose = dosument.querySelector('.search-close'),
+showClass = document.querySelector('.site');
+
+searchButton.addEventListener('click', function() {
+    showClass.classList.toggle('showsearch')
+});
+tClose.addEventListener('click', function() {
+    showClass.classList.remove('showsearch')
+});
+
+
+    
+
+
