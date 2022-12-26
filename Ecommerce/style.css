@@ -562,7 +562,7 @@ opacity: .8;
 }
 .text-content :where(h2, h3) span:first-child{
     font-weight: var(--fw3);
-    columns: var(--light-text-color);
+    color: var(--light-text-color);
 }
 .text-content :where(h2, h3) span:last-child{
     color: var(--secondary-dark-color);
@@ -836,8 +836,56 @@ opacity: .8;
     z-index: 3;
 }
 
-
-
+/* BANNER SECTION  */
+.banners .item{
+    position: relative;
+    background-color: var(--white-color);
+    border: 3px solid var(--border-color);
+}
+.banner .image{
+    text-align: right;
+}
+.banner .get-gray{
+    background-color: var(--border-color);
+}
+.banner :where(.text-content, .over-link){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--percent100);
+    height: var(--percent100);
+}
+.banner .text-content{
+    padding: 1.5em 2.5em;
+}
+.banner h3{
+    font-size: calc(1em + 0.5vw);
+    font-weight: var(--fw3);
+}
+.banner h3 span {
+    font-size: 80%;
+}
+.banner .primary-button{
+    z-index: 3;
+}
+.banners .product-categories .item{
+    display: flex;
+    padding: 1.5em;
+}
+.banners .product-categories .image{
+    max-width: 150px;
+}
+.mini-links ul{
+    font-size: var(--font-small);
+    color: var(--light-text-color);
+    margin-top: 1em;
+}
+.banners .second-links{
+    margin-top: 7em;
+}
+.mini-links li a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -859,7 +907,8 @@ opacity: .8;
     .products .price .current{
         font-size: 1.25em;
     }
-    .products.mini {
+    .products.mini,
+    .banner .row {
         flex: 0 0 50%;
     }
     .products.main .item{
@@ -1039,7 +1088,8 @@ opacity: .8;
     }
 
     /* products */
-    .trending .products{
+    .trending .products, 
+    .product-categories .row{
         flex: 0 0 33.3333%;
     }
     .products.big .media{
