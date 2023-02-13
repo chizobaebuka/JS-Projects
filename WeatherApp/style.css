@@ -1,60 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #222;
-    font-size: 120%;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
     font-family: sans-serif;
-    background-image: url('https://source.unsplash.com/1600x900/?nature,water');
 }
-
-.card{
-    background: #000000d0;
-    color: white;
-    padding: 2em;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 420px;
-    margin: 0;
+.location,
+.temperature{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.search {
+.temperature{
+    flex-direction: column;
+}
+.degree-section{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-button{
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 44px;
-    width: 44px;
-    outline: none;
-    background: #7c7c7c2d;
-    color: white;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
 }
-
-button:hover{
-    background: #7c7c7c6b;
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
 }
-
-input.search-bar{
-    border: none;
-    outline: none;
-    padding: 0.3em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: white;
-    font-family: inherit;
-    font-size: 105%;
-    width: calc(100% - 80px);
-}
-
-h1.temp{
-    margin: 0;
+.degree-section h2{
+    font-size: 40px;
 }
