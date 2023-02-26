@@ -315,7 +315,8 @@ textarea.input-control{
 .about-img, 
 .about-text{
     grid-column: span 6;
-    align-self: center;
+    align-self: center
+    ;
 }
 .about-img .img-box{
     max-width: 400px;
@@ -559,8 +560,3 @@ textarea.input-control{
     border-color: initial;
 
 }
-
-
-
-
-
