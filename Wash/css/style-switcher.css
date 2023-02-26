@@ -124,11 +124,13 @@
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+.form-switch input:focus + .box{
+    box-shadow: var(--focus-shadow);
+}
 .form-switch input:checked + .box::before{
     transform: translateX(calc(100% + 6px));
     background-color: var(--bg-white);
     border-color: transparent;
-    
 }
 
 
